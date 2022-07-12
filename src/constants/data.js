@@ -109,3 +109,46 @@ export const coinInfo = [
         currency2: 'AUD',
     },
 ]
+
+export const companyLogo = [
+    {
+        id: 1,
+        darkImg: images.a_MoneyGram,
+        lightImg: images.a_MoneyGram_W,
+    },
+    {
+        id: 2,
+        darkImg: images.b_SatoshiPay,
+        lightImg: images.b_SatoshiPay_W,
+    },
+    {
+        id: 3,
+        darkImg: images.c_Circle,
+        lightImg: images.c_Circle_W,
+    },
+    {
+        id: 4,
+        darkImg: images.d_ClickPesa,
+        lightImg: images.d_ClickPesa_W,
+    },
+    {
+        id: 5,
+        darkImg: images.a_MoneyGram,
+        lightImg: images.a_MoneyGram_W,
+    },
+    {
+        id: 6,
+        darkImg: images.b_SatoshiPay,
+        lightImg: images.b_SatoshiPay_W,
+    },
+    {
+        id: 7,
+        darkImg: images.c_Circle,
+        lightImg: images.c_Circle_W,
+    },
+    {
+        id: 8,
+        darkImg: images.d_ClickPesa,
+        lightImg: images.d_ClickPesa_W,
+    },
+]

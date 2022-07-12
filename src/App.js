@@ -22,7 +22,7 @@ const App = () => {
       <IntroAbout />
       <CoinSlider />
       <ImgInfoVideo />
-      <CompanySlider />
+      <CompanySlider themeToggling={themeToggling}/>
       <Footer />
     </main>
 

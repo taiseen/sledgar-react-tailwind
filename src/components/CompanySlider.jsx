@@ -3,9 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { companyLogo } from '../constants/data';
 
 
-const CompanySlider = () => {
+
+const CompanySlider = ({ themeToggling }) => {
 
   return (
     <section className='p-6 pb-14 lg:px-16 text-center dark:bg-[#2F1B58] dark:text-gray-200'>
@@ -14,18 +16,18 @@ const CompanySlider = () => {
 
       <div>
         <Swiper
-          className="mySwiper product-slider"
-          slidesPerView={1}
+          className="py-12 flex items-center justify-center"
+          slidesPerView={3}
           spaceBetween={10}
           modules={[Pagination, Navigation, Autoplay]}
           centeredSlides={true}
           loop={true}
-          navigation={true}
+          // navigation={true}
           pagination={{
             clickable: true,
           }}
           autoplay={{
-            delay: 2500,
+            delay: 4500,
             disableOnInteraction: false,
           }}
           breakpoints={{
@@ -36,22 +38,23 @@ const CompanySlider = () => {
               slidesPerView: 2,
             },
             1024: {
-              slidesPerView: 3,
-              spaceBetween: 20,
+              slidesPerView: 4,
+              spaceBetween: 10,
             },
           }}
         >
           {
-            // data.productBox.slice(0, 5).map((product, i) => (
-            //   <SwiperSlide key={i} className="slide">
-            //     <ProductBox product={product} />
-            //   </SwiperSlide>
-            // ))
+            companyLogo.map(img => (
+              // console.log(img.darkImg)
+              <SwiperSlide key={img.id}>
+                <div className="flex items-center justify-center pb-8">
+                  <img src={img.darkImg} alt="" className='w-60 lg:w-48' />
+                  {/* <div className='w-1 h-8 bg-black dark:bg-gray-400'></div> */}
+                </div>
+              </SwiperSlide>
+            ))
           }
-
         </Swiper>
-
-
       </div>
     </section>
   )

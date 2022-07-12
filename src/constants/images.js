@@ -44,9 +44,9 @@ import c_Circle from '../assets/c_Circle.png';
 import c_Circle_W from '../assets/c_Circle_W.png';
 import d_ClickPesa from '../assets/d_ClickPesa.png';
 import d_ClickPesa_W from '../assets/d_ClickPesa_W.png';
-import downArrow from '../assets/downArrow.png';
 import TrendDown from '../assets/TrendDown.png';
 import TrendUp from '../assets/TrendUp.png';
+import menuBar from '../assets/menuBar.png';
 
 
 
@@ -97,9 +97,9 @@ const images = {
     c_Circle,
     d_ClickPesa,
     d_ClickPesa_W,
-    downArrow,
     TrendDown,
     TrendUp,
+    menuBar,
 }
 
 export default images;

@@ -11,3 +11,18 @@ body {
 .iconStyling {
     @apply w-12 h-12 bg-gray-200 rounded-full text-black text-2xl grid place-items-center cursor-pointer hover:bg-gray-400 duration-200;
 }
+
+.navigationPointerNumber{
+    @apply w-12 h-12 bg-[#4D4D4D] rounded text-white grid place-items-center cursor-pointer hover:bg-[#8D22DA] duration-200;
+}
+
+
+/* .swiper-pagination-bullet-active {
+    background-color: #8D22DA !important;
+} */
+
+/* target all bullets */
+/* .swiper-pagination-bullet {
+    @apply w-12 h-12 bg-[#4D4D4D] rounded text-white cursor-pointer hover:bg-[#8D22DA] duration-200 ; 
+    opacity: 1;
+} */
