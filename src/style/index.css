@@ -16,6 +16,10 @@ body {
     @apply w-12 h-12 bg-[#4D4D4D] rounded text-white grid place-items-center cursor-pointer hover:bg-[#8D22DA] duration-200;
 }
 
+  
+.lightRound{
+    clip-path: ellipse(2400px 2400px at 50% -190%);
+}
 
 /* .swiper-pagination-bullet-active {
     background-color: #8D22DA !important;

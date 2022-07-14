@@ -1,7 +1,5 @@
 > 09 - July - 2022
 
-## Sledgar
+## Sledgar | [Live Link](https://sledgar.netlify.app)
 
 # React + TailwindCSS
-
-

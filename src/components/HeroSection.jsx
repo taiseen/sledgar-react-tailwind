@@ -4,9 +4,9 @@ import Graph from '../assets/Graph';
 const HeroSection = ({ themeToggling }) => {
 
   return (
-    <section className='px-4 lg:px-36 py-12 text-center dark:bg-[#2B1867] text-gray-700 dark:text-gray-200 relative '>
+    <section className='px-4 lg:px-36 py-12 text-center dark:bg-[#200A4C] text-gray-700 dark:text-gray-200 relative '>
 
-      {/* <div className='absolute top-0 left-0 right-0 bottom-0  h-full w-full bg-blue-100/20 rounded-b-[800px]'></div> */}
+      <div className='absolute top-0 left-0 right-0 bottom-0  h-full w-full dark:bg-[#2B1867] lightRound xl:lightRoundBig'></div>
 
 
       {/* <div className='absolute top-[-25px] left-[50%] translate-x-[-48%] w-full lg:w-[800px] '>
