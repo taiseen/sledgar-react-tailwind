@@ -16,7 +16,7 @@ const HeroSection = ({ themeToggling }) => {
       {/* 🟡 Circle 1 🟡*/}
       {/* <div className={`w-36 h-36 bg-gradient-to-l ${themeToggling ? 'from-indigo-900' : 'from-slate-200'} rounded-full absolute top-[-180px] left-[370px]`}></div> */}
 
-      <div className={`hidden lg:block absolute top-[-160px] left-[350px] w-40 -z-0`}>
+      <div className={`hidden lg:block absolute top-[-160px] left-[350px] 3xl:left-[440px] w-40 -z-0`}>
         <img src={themeToggling ? images.topLeft_1 : images.topLeft_1_w} alt="" className='w-full' />
       </div>
 
@@ -26,7 +26,7 @@ const HeroSection = ({ themeToggling }) => {
         : 'from-slate-200 rotate-[30deg]'} 
         rounded-full absolute top-40 left-0`}></div> */}
 
-      <div className={`hidden lg:block absolute top-20 left-10 w-[340px] -z-0`}>
+      <div className={`hidden lg:block absolute top-20 left-10 3xl:left-52 w-[340px] -z-0`}>
         <img src={themeToggling ? images.topLeft_2 : images.topLeft_2_w} alt="" className='w-full' />
       </div>
 
@@ -38,7 +38,7 @@ const HeroSection = ({ themeToggling }) => {
 
 
       {/* 🟡 Circle 4 🟡*/}
-      <div className={`hidden lg:block absolute top-0 right-36 w-48 -z-0`}>
+      <div className={`hidden lg:block absolute top-0 lg:top-16 right-36 w-48 -z-0`}>
         <img src={themeToggling ? images.topRight_4 : images.topRight_4_w} alt="" className='w-full' />
       </div>
 
@@ -50,16 +50,16 @@ const HeroSection = ({ themeToggling }) => {
 
 
       {/* 🟡 Circle 6 🟡*/}
-      <div className={`hidden lg:block absolute bottom-28 right-[445px] w-32 -z-0`}>
+      <div className={`hidden lg:block absolute bottom-[90px] 3xl:bottom-24 right-[430px] 3xl:right-[610px] w-32 -z-0`}>
         <img src={themeToggling ? images.bottomRightSmall_6 : images.bottomRightSmall_6_w} alt="" className='w-full' />
       </div>
 
 
       {/* 🟡 UI For ==> Graph 🟡*/}
-      <div className={`absolute top-40 lg:top-[-50px] left-[50%] translate-x-[-52%] w-full lg:w-[780px]`}>
+      <div className={`absolute top-40 lg:top-[-40px] left-[50%] translate-x-[-50%] w-full lg:w-[780px]`}>
         {
           themeToggling
-            ? <Graph color={`#1F307D`} className={`w-full`}/>
+            ? <Graph color={`#1F307D`} className={`w-full`} />
             : <Graph color={`#E6E6E6`} className={`opacity-30 w-full`} />
         }
       </div>
@@ -92,11 +92,15 @@ const HeroSection = ({ themeToggling }) => {
       </div>
 
 
-
+      {/* Mobile Image UI Section */}
       <div className='relative flex items-center justify-center'>
         <img src={images.HeroMobile} alt="" className='w-96' />
-        <img src={images.HeroRating} alt="" className='w-44 absolute top-[72px] lg:top-20 right-4 lg:right-80' />
-        <img src={images.HeroPeople} alt="" className='w-48 absolute bottom-14 lg:bottom-28 left-4 lg:left-72 lg:scale-125' />
+
+        {/* Ratting Image */}
+        <img src={images.HeroRating} alt="" className='w-44 absolute top-[72px] lg:top-20 right-4 lg:right-80 3xl:right-[505px]' />
+
+        {/* Peoples Image */}
+        <img src={images.HeroPeople} alt="" className='w-48 absolute bottom-14 lg:bottom-28 left-4 lg:left-72 lg:scale-125 3xl:left-[470px]' />
       </div>
 
     </section>

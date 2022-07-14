@@ -9,17 +9,17 @@ const ImgInfoVideo = () => {
 
       <div className=' px-6 lg:px-36 py-6 '>
 
-        {/* 🟨🟨🟨 UI For ==> 1st Group */}
+        {/* 🟨🟨🟨 UI For ==> 1st Group --- Just Mobile image art */}
         <div className='flex flex-wrap flex-col md:flex-row items-center justify-center xl:justify-between py-8 lg:border-b border-gray-500'>
 
-          <div className='w-full lg:w-[500px] space-y-4 '>
-            <p className='text-sm'>Decentralized Payment Network</p>
-            <h2 className='text-3xl'>StellerLedgar is the <br /> Safest Network</h2>
-            <p className='text-xs w-full lg:w-[480px] leading-5 dark:text-slate-400 pb-4 '>StellarLedger is a ledger where all assets are held in a very secure wallet, which allows the user to control their funds at all time. Steller is an open-source protocol for exchanging money, its network validates transactions and allows irreversible and cryptographically secure payments.</p>
+          <div className='w-full xl:w-[500px] space-y-4 '>
+            <p className='text-sm 3xl:text-base'>Decentralized Payment Network</p>
+            <h2 className='text-3xl 3xl:text-5xl'>StellerLedgar is the <br /> Safest Network</h2>
+            <p className='text-xs 3xl:text-sm w-full lg:w-[480px] 3xl:w-[550px] leading-5 dark:text-slate-400 pb-4'>StellarLedger is a ledger where all assets are held in a very secure wallet, which allows the user to control their funds at all time. Steller is an open-source protocol for exchanging money, its network validates transactions and allows irreversible and cryptographically secure payments.</p>
             <button className='hidden lg:block px-4 py-3 bg-[#9047c4] text-white rounded-lg text-sm'>Learn More</button>
           </div>
 
-          <div className='px-8 w-full lg:w-[500px]'>
+          <div className='px-8 w-full lg:w-[550px] 3xl:w-[650px]'>
             <img src={images.MobileArt} alt="" className='w-full h-full' />
           </div>
 
@@ -28,7 +28,7 @@ const ImgInfoVideo = () => {
         </div>
 
 
-        {/* 🟨🟨🟨 UI For ==> 2st Group */}
+        {/* 🟨🟨🟨 UI For ==> 2nd Group */}
         <div className='flex flex-wrap items-center justify-center lg:justify-between gap-6 pt-14'>
           {
             appRelatedInfo.map(item =>
@@ -43,14 +43,14 @@ const ImgInfoVideo = () => {
       </div>
 
 
-      {/* 🟨🟨🟨 UI For ==> 3st Group */}
+      {/* 🟨🟨🟨 UI For ==> 3rd Group --- Video Image */}
       <div className='dark:bg-[#200A4C] lg:px-36'>
 
 
         <div className='border-t-[16px] border-b-[16px] lg:border-[16px] border-gray-100 dark:border-[#301B59] overflow-hidden  relative'>
 
-          <div className='h-[620px] min-w-[200vw] md:min-w-screen md:h-[880px] '>
-            <img src={images.VideoBanner} alt="" className='object-cover h-full' />
+          <div className='h-[620px] min-w-[200vw] md:min-w-screen md:h-[650px] lg:h-[600px] 3xl:h-[800px]'>
+            <img src={images.VideoBanner} alt="" className='w-screen h-full' />
           </div>
 
           <div className='pl-6 lg:pl-10 pr-20 lg:pr-28 py-6 lg:py-8 bg-black/70 border-l-2 border-[#B868F1] absolute top-10 left-10 text-gray-300 space-y-2'>

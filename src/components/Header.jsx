@@ -7,7 +7,7 @@ const Header = ({ themeToggling, setThemeToggling }) => {
 
   const [menuToggling, setMenuToggling] = useState(false);
 
-  
+
   return (
     <header className='px-4 lg:px-36 py-6 flex items-center justify-between flex-wrap  dark:bg-[#2B1867] text-gray-700 dark:text-gray-200 z-30'>
 
@@ -74,13 +74,14 @@ const Header = ({ themeToggling, setThemeToggling }) => {
 
 
       {
+        // 🟨🟨🟨 UI Only ==> For Mobile Menu 
         menuToggling &&
-        <nav className='bg-gray-300 dark:bg-[#1e0a5f] dark:text-gray-200 absolute top-0 left-0 right-0 flex flex-col gap-4 items-center justify-center p-4 z-50 duration-200 ease-in' >
-          <a href="/#" onClick={() => setMenuToggling(false)} >Home</a>
-          <a href="/#" onClick={() => setMenuToggling(false)}>Exchange</a>
-          <a href="/#" onClick={() => setMenuToggling(false)}>Market</a>
-          <a href="/#" onClick={() => setMenuToggling(false)}>NFT</a>
-          <a href="/#" onClick={() => setMenuToggling(false)}>Downloads</a>
+        <nav className='bg-gray-300 dark:bg-[#1e0a5f] dark:text-gray-200 absolute top-0 left-0 right-0 flex flex-col items-center justify-center p-2 z-50 origin-top transform duration-200 ease-in rounded-b-3xl' >
+          <a href="/#" onClick={() => setMenuToggling(false)} className='w-full py-2 text-center'>Home</a>
+          <a href="/#" onClick={() => setMenuToggling(false)} className='w-full py-2 text-center'>Exchange</a>
+          <a href="/#" onClick={() => setMenuToggling(false)} className='w-full py-2 text-center'>Market</a>
+          <a href="/#" onClick={() => setMenuToggling(false)} className='w-full py-2 text-center'>NFT</a>
+          <a href="/#" onClick={() => setMenuToggling(false)} className='w-full py-2 text-center'>Downloads</a>
         </nav>
       }
     </header >

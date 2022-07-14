@@ -1,7 +1,7 @@
 const Graph = (props) => {
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="830" height="780" viewBox="0 0 1280.97 1187" {...props}>
+    <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="830" height="800" viewBox="0 0 1280.97 1187" {...props}>
       <defs>
         <filter id="Ellipse_1566">
           <feOffset dy="3" input="SourceAlpha" />
